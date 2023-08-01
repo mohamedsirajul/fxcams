@@ -1,0 +1,105 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #sidenav mode="side" [opened]="!reportsExpanded" class="sidenav" >
+    <ng-container *ngIf="!reportsExpandeds">
+      <mat-nav-list >
+        <img src="../../../../assets/img/9507-mainlogo.png" width="100%">
+        <!-- Add icon for Dashboard link -->
+
+        <a mat-list-item routerLink="dashboard"  class="nav-link">
+          <mat-icon>dashboard</mat-icon>
+          Dashboard
+        </a>
+        <!-- Add icon for Menu link -->
+        <a mat-list-item routerLink="/menu" class="nav-link">
+          <mat-icon>menu</mat-icon>
+          Menu
+        </a>
+        <!-- <a mat-list-item routerLink="/menu" class="nav-link">
+          <mat-icon>menu</mat-icon>
+          Menu
+        </a> -->
+        <a mat-list-item (click)="toggleReportsSubmenu()" class="nav-link">
+          <mat-icon>print</mat-icon>
+          Documents
+          <mat-icon class="report_arrow">keyboard_arrow_right</mat-icon>
+        </a>        
+      </mat-nav-list>
+    </ng-container>
+    <ng-container *ngIf="reportsExpandeds" >
+      <mat-nav-list >
+        <img src="../../../../assets/img/9507-mainlogo.png" width="100%">
+        <div class="back-icon-header">
+          <mat-icon (click)="goBackToMainNav()">arrow_back</mat-icon>
+          <h4>Documents</h4>
+        </div>
+        <a mat-list-item class="nav-link" routerLink="/documents" >
+          <mat-icon>local_printshop</mat-icon>
+          Transfer Certificate
+        </a>
+      </mat-nav-list>
+    </ng-container>
+  </mat-drawer>
+
+  <mat-drawer-content class="content">
+    <mat-toolbar class="toolbar">
+      <button mat-icon-button class="iconmenu" (click)="toggleMenu()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="example-spacer"></span>
+      <div class="dates">
+        <app-clock></app-clock>
+      </div>
+      <div class="date">
+        <app-users></app-users>
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+
+<!-- <mat-drawer-container>
+  <mat-drawer #sidenav mode="side" [opened]="!reportsExpanded" class="sidenav">
+    <ng-container *ngIf="!reportsExpandeds">
+      <mat-nav-list>
+        <img src="../../../../assets/img/9507-mainlogo.png" width="100%">
+        <a mat-list-item routerLink="/dashboard" class="nav-link" (click)="onMenuItemClick('Dashboard')">Dashboard</a>
+        <a mat-list-item routerLink="/menu" class="nav-link" (click)="onMenuItemClick('Menu')">Menu</a>
+        <a mat-list-item (click)="toggleReportsSubmenu()">Reports</a>
+      </mat-nav-list>
+    </ng-container>
+    <ng-container *ngIf="reportsExpandeds">
+      <mat-nav-list class="sub-sidenav">
+        <img src="../../../../assets/img/9507-mainlogo.png" width="100%">
+        <mat-icon margin="2px" (click)="goBackToMainNav()">arrow_back</mat-icon>
+        <a mat-list-item routerLink="/reports/sales">Sales Report</a>
+        <a mat-list-item routerLink="/reports/products">Product Report</a>
+      </mat-nav-list>
+    </ng-container>
+  </mat-drawer>
+
+  <mat-drawer-content class="content">
+    <mat-toolbar class="toolbar">
+      <button mat-icon-button class="iconmenu" (click)="toggleMenu()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="example-spacer"></span>
+      <div class="dates">
+        <app-clock></app-clock>
+      </div>
+      <div class="date">
+        <app-users></app-users>
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+
+    <app-card *ngIf="isMenuSelected" [selectedMenuItem]="selectedMenuItem">
+      <ng-container *ngIf="selectedMenuItem === 'Dashboard'">
+        <p>Dashboard content goes here...</p>
+      </ng-container>
+      <ng-container *ngIf="selectedMenuItem === 'Menu'">
+        <p>Menu content goes here...</p>
+      </ng-container>
+    </app-card>
+  </mat-drawer-content>
+</mat-drawer-container> -->

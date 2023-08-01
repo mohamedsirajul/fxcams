@@ -1,0 +1,24 @@
+/* .mat-tab-group { */
+  /* background-color: #5e85cc;  */
+  /* color: white; */
+/* } */
+/* ::ng-deep.mat-mdc-tab-labels *{
+  background-color: #5e85cc; 
+  color:white !important;
+} */
+/* styles.css (or your custom CSS file) */
+.table-container {
+  width: 80%; /* Set the desired width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 20%;
+}
+
+.custom-cell {
+  padding: 4px 8px; /* Adjust the cell padding as needed */
+  text-align: center; /* Center-align the table data */
+}
+.custom-table .mat-header-row {
+  background-color: #5e85cc; /* Set your desired header background color (blue) */
+  color: #fff; /* Set the header text color to white */
+  text-align: center; /* Center-align the header text */
+}

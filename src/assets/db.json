@@ -1,0 +1,42 @@
+[
+      {
+      "reg_no": "95072118055",
+      "tc_no": "580/1020/2019-2021/129",
+      "admission_no": "19255386",
+      "name_student": "MOHAMED NASEER K",
+      "name_parent": "KAJA NAJIMUDEEN",
+      "nationality": "INDIAN - BCM",
+      "caste": "LEBBAI - BCM",
+      "gender": "MALE",
+      "dob": "17.02.2001",
+      "dob_txt": "SEVENTEENTH - FEBRUARY - TWO THOUSAND ONE",
+      "personal_identification": "1. A BLACK MOLE ABOVE THE LEFT ELBOW \n 2. A SCAR ON THE RIGHT WRIST",
+      "year_of_admission": "2019",
+      "course_studying": "DIPLOMA IN MECHANICAL ENGINEERING",
+      "qualified_for_promotion": "REFER MARKSHEET",
+      "date_on_left_the_institution": "03/07/2021",
+      "date_of_application_for_tc": "09/07/2021",
+      "date_of_issue_of_tc":"09/07/2021",
+      "reason_for_leaving":"COURSE COMPLETED"
+    },
+    {      
+        "reg_no": "95072118035",
+        "tc_no": "580/1020/2021-2025/154",
+        "admission_no": "9507211",
+        "name_student": "MOHAMED SIRAJUL MUNEER Z",
+        "name_parent": "ZIYAUDHEEN M",
+        "nationality": "INDIAN - BCM",
+        "caste": "LEBBAI - BCM",
+        "gender": "MALE",
+        "dob": "20.11.2003",
+        "dob_txt": "TWENTY - NOVEMBER - TWO THOUSAND THREE",
+        "personal_identification": "1. A BLACK MOLE ABOVE THE LEFT ELBOW \n 2. A SCAR ON THE RIGHT WRIST",
+        "year_of_admission": "2025",
+        "course_studying": "BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE AND BUSINESS SYSTEMS",
+        "qualified_for_promotion": "REFER MARKSHEET",
+        "date_on_left_the_institution": "03/07/2021",
+        "date_of_application_for_tc": "09/07/2021",
+        "date_of_issue_of_tc":"09/07/2021",
+        "reason_for_leaving":"FEVER"
+      }
+  ]
